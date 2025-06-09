@@ -1,5 +1,6 @@
 import Image from "next/image";
 import styles from "./page.module.css";
+import { Star } from 'lucide-react';
 
 export default function Home() {
   return (
@@ -12,7 +13,7 @@ export default function Home() {
 
             <div className="divider-custom divider-light">
               <div className="divider-custom-line"></div>
-              <div className="divider-custom-icon"><i className="fas fa-star"></i></div>
+              <div className="divider-custom-icon"><Star size={40}/></div>
               <div className="divider-custom-line"></div>
             </div>
 

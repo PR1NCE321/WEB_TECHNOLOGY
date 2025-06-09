@@ -1,5 +1,7 @@
 import React from 'react'
 import Link from "next/link";
+import { Star } from 'lucide-react';
+
 
 
 function RootLayout({ children }: { children: React.ReactNode; }) {
@@ -11,7 +13,7 @@ function RootLayout({ children }: { children: React.ReactNode; }) {
 
                 <div className="divider-custom divider-light">
                     <div className="divider-custom-line"></div>
-                    <div className="divider-custom-icon"><i className="fas fa-star"></i></div>
+                    <div className="divider-custom-icon"><Star size={40}/></div>
                     <div className="divider-custom-line"></div>
                 </div>
 

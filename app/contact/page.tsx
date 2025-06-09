@@ -1,4 +1,6 @@
 import React from 'react'
+import { Star } from 'lucide-react';
+
 
 function Contact() {
     return (
@@ -9,7 +11,7 @@ function Contact() {
 
                 <div className="divider-custom">
                     <div className="divider-custom-line"></div>
-                    <div className="divider-custom-icon"><i className="fas fa-star"></i></div>
+                    <div className="divider-custom-icon"><Star size={40}/></div>
                     <div className="divider-custom-line"></div>
                 </div>
 

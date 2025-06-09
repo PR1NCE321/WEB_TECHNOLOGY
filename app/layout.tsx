@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Link from "next/link";
+import { Facebook, Twitter, Dribbble, Linkedin } from "lucide-react";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -35,22 +36,20 @@ export default function RootLayout({
         <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossOrigin="anonymous"></script>
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossOrigin="anonymous" />
+        <link href="/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
         <link href="css/styles.css" rel="stylesheet" />
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         <nav className="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
           <div className="container">
             <Link className="navbar-brand" href="/">Home</Link>
-            <button className="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-              Menu
-              <i className="fas fa-bars"></i>
-            </button>
             <div className="collapse navbar-collapse" id="navbarResponsive">
               <ul className="navbar-nav ms-auto">
                 <li className="nav-item mx-0 mx-lg-1"><Link className="nav-link py-3 px-0 px-lg-3 rounded" href="/portfolio">Portfolio</Link></li>
                 <li className="nav-item mx-0 mx-lg-1"><Link className="nav-link py-3 px-0 px-lg-3 rounded" href="/about">About</Link></li>
                 <li className="nav-item mx-0 mx-lg-1"><Link className="nav-link py-3 px-0 px-lg-3 rounded" href="/contact">Contact</Link></li>
+                <li className="nav-item mx-0 mx-lg-1"><Link className="nav-link py-3 px-0 px-lg-3 rounded" href="/team">Team</Link></li>
+
               </ul>
             </div>
           </div>
@@ -75,10 +74,10 @@ export default function RootLayout({
 
               <div className="col-lg-4 mb-5 mb-lg-0">
                 <h4 className="text-uppercase mb-4">Around the Web</h4>
-                <a className="btn btn-outline-light btn-social mx-1" href="#!"><i className="fab fa-fw fa-facebook-f"></i></a>
-                <a className="btn btn-outline-light btn-social mx-1" href="#!"><i className="fab fa-fw fa-twitter"></i></a>
-                <a className="btn btn-outline-light btn-social mx-1" href="#!"><i className="fab fa-fw fa-linkedin-in"></i></a>
-                <a className="btn btn-outline-light btn-social mx-1" href="#!"><i className="fab fa-fw fa-dribbble"></i></a>
+                <a className="btn btn-outline-light btn-social mx-1" href="#!"><Facebook color="skyblue" /></a>
+                <a className="btn btn-outline-light btn-social mx-1" href="#!"><Twitter color="skyblue" /></a>
+                <a className="btn btn-outline-light btn-social mx-1" href="#!"><Linkedin color="skyblue" /> </a>
+                <a className="btn btn-outline-light btn-social mx-1" href="#!"><Dribbble color="skyblue" /></a>
               </div>
 
               <div className="col-lg-4">
@@ -92,6 +91,8 @@ export default function RootLayout({
             </div>
           </div>
         </footer>
+
+
       </body>
     </html>
   );
