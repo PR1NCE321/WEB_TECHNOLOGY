@@ -49,6 +49,8 @@ export default function RootLayout({
                 <li className="nav-item mx-0 mx-lg-1"><Link className="nav-link py-3 px-0 px-lg-3 rounded" href="/about">About</Link></li>
                 <li className="nav-item mx-0 mx-lg-1"><Link className="nav-link py-3 px-0 px-lg-3 rounded" href="/contact">Contact</Link></li>
                 <li className="nav-item mx-0 mx-lg-1"><Link className="nav-link py-3 px-0 px-lg-3 rounded" href="/team">Team</Link></li>
+                <li className="nav-item mx-0 mx-lg-1"><Link className="nav-link py-3 px-0 px-lg-3 rounded" href="/services">Services</Link></li>
+
 
               </ul>
             </div>
@@ -74,7 +76,7 @@ export default function RootLayout({
 
               <div className="col-lg-4 mb-5 mb-lg-0">
                 <h4 className="text-uppercase mb-4">Around the Web</h4>
-                <a className="btn btn-outline-light btn-social mx-1" href="#!"><Facebook color="skyblue" /></a>
+                <Link className="btn btn-outline-light btn-social mx-1" href="#!"><Facebook color="skyblue" /></Link>
                 <a className="btn btn-outline-light btn-social mx-1" href="#!"><Twitter color="skyblue" /></a>
                 <a className="btn btn-outline-light btn-social mx-1" href="#!"><Linkedin color="skyblue" /> </a>
                 <a className="btn btn-outline-light btn-social mx-1" href="#!"><Dribbble color="skyblue" /></a>
