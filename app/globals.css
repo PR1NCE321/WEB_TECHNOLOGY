@@ -1,3 +1,5 @@
+/* @import "tailwindcss"; */
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -9,6 +11,8 @@
     --foreground: #ededed;
   }
 }
+
+
 
 html,
 body {
@@ -156,4 +160,21 @@ a {
 
 .service-item:hover .readmore {
   color: var(--accent-color);
+}
+
+
+.swiper {
+  padding: 10px 0;
+}
+
+.swiper-wrapper {
+  height: auto;
+}
+
+.swiper-slide img {
+  transition: 0.3s;
+}
+
+.swiper-slide img:hover {
+  transform: scale(1.1);
 }
